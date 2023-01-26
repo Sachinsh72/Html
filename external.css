@@ -1,0 +1,96 @@
+/* Font css  */
+/* CDN - Content delivery network */
+
+body{
+   /* font-family: 'Lobster', cursive; */
+   font-family: 'Dancing Script', cursive;
+   font-family: 'Lobster', cursive;
+   font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    color: black;
+    
+    font-size: 50px;
+}
+
+.ext{
+    color: darkgoldenrod;
+    font-size: larger;
+    border: burlywood solid 4px;
+    border-radius: 8px;
+}
+
+#externalcss{
+    color: blue;
+    border: 5px dotted white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    text-decoration: underline;
+}
+
+ /* Priority of CSS in the file  */
+
+ .priority{
+    border: brown 20px solid;
+    font: bolder;
+    color: brown;
+    text-align: center;
+ }
+
+ /* Simple Selectors */
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+
+   h1{
+    background-color: palevioletred;
+   }
+
+ .selector{
+    background-color: white;
+ }
+
+ #simple{
+    color: yellow;
+    background-color: red;
+ }
+
+ /* selector list - just use multiple selector just by ,
+
+ .selector , .priority , .external{
+    background-color: white;
+ } */
+
+ main p{
+     font-size: small;
+    
+ }
+
+ main > p{
+ border: 10px solid black;
+   
+}
+
+ section + p {
+    background-color: white;
+ }
+
+ section ~ p {
+    background-color: blue;
+ }
+
+ /* attribute selector  */
+ [target="_blank"]{
+    color: palevioletred;
+    text-decoration: none;
+ }
+
+ [alt~="img"]{
+    background-color: black;
+ }
+
+ 
