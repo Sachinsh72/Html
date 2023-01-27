@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2</title>
+    <link rel="stylesheet" href="external2.css">
+    <style>
+        div{
+            padding: 10px 2px 10px 2px;
+            margin: 10px;
+            border: 2px solid #ad0707;
+        }
+
+        p{
+            color: rgb(39, 132, 68);
+        }
+
+        body{
+            /* background-color: #c27777; */
+            /* background-image: url(https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600); */
+
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            background-position: center;
+            /* background-attachment: fixed; */
+            /* background-attachment: scroll; */
+            background-attachment: local;
+            background-size: contain;
+            border: 1px solid black;
+
+        }
+
+        .padding{
+            /* padding: 20px; */
+            /* padding: 10px 100px 10px 100px; */
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 100px;
+            border: 4px solid black;
+
+        }
+
+        .margin{
+            border: 2px solid blueviolet;
+            /* width: 160px; */
+            /* margin: auto; */
+            /* margin: 100px; */
+            margin: 100px 50px;
+        }
+
+        .texth3{
+            color: pink;
+            text-align: center;
+        }
+
+        .textp{
+            /* text-align-last: center; */
+            /* direction: ltr; */
+            /* direction: rtl; */
+            text-indent: 100px;
+            /* letter-spacing: 2px; */
+            word-spacing: 5px;
+            /* line-height: 15px; */
+        }
+
+        .texta{
+            text-align: justify;
+            text-decoration: underline;
+            /* text-transform: uppercase; */
+            /* text-transform: lowercase; */
+            
+        }
+
+        .font{
+            font-family: 'Times New Roman', Times, serif;
+            /* font-size: larger; */
+            font-size: 150px;
+            font-variant: small-caps;
+            /* font-weight: 900; */
+            font-weight: 400;
+        }
+
+        .dis{
+            display: inline;
+        }
+
+        span{
+            display: block;
+        }
+
+        /* .in-block{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+        } */
+
+        .in-block{
+            display: none ;
+            width: 200px;
+            height: 100px;
+        }
+
+        .width{
+            /* width: 200px; */
+            /* min-width: 100px; */
+            /* display: inline-block; */
+            border: 2px solid black;
+            max-width: 200px;
+        }
+
+        .height{
+            /* height: 100px; */
+            border: 2px solid red;
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        .boxsizing{
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Box Model : used when discussing a web application's design and layout. it is a box that wraps around every HTML element. it consist margins,bordors,padding and the actual content.
+    User agent stylesheet: css given by browser if you want to remove give universal css (Universal selector)-->
+
+    <h1>BOX MODEL</h1>
+    <div>Sachin</div>
+
+    <!-- Color and style : color can be specified in a number of ways - using predefined color names, hexadecimal color codes, RGB values, HSL values, "rgba" function, "hsla" function, "transparent" keyword -->
+
+    <p>e mpore ipsa earummque ducimus dolor quas nam. Atque, eos libero? Natus aliquam fuga animi rerum exercitationem doloribus eius, voluptas dolorum atque iusto provident voluptatem quo quod ad maiores odio perferendis quam?</p>
+
+    <!-- Margin & padding  -->
+
+    <p class="padding"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, in?
+        Lorem ipsum dolor sit amet. </p>
+
+    <p class="margin"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum et, expedita impedit dolores atque dicta non sed quod, distinctio architecto minima, repudiandae totam? Sapiente nemo porro repellendus exercitationem cupiditate amet. Vitae repudiandae harum atque labore, aliquam aperiam nulla eligendi accusamus deserunt repellat officia amet tempore laudantium ab reprehenderit ullam similique.
+    </p>
+
+    <!-- Text  : color, alignment, decoration, transformation, letter spacing, line height, word spacing -->
+
+    <h3 class="texth3">Sachin sharma</h3>
+    <p class="textp"> Lorem ipsum dolor sit  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, placeat molestiae! Nulla dicta eligendi, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ullam! nostrum enim aperiam nesciunt eius voluptas.</p>
+    <a href="google.com" class="texta">google click here</a>
+
+    <!-- Font : color(not supported), family, size, variant, weight -->
+    
+    <p class="font"> Sachin Sharma </p>
+
+    <!-- Display property  -->
+
+    <p class="dis">default behaviour taking</p>
+    <p class="dis">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+
+    <p class="in-block"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, odio?</p>
+
+     <!-- Height, min-height, max-height, box-sizing, width, min-width, max-width  -->
+
+     <p class="width"> Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, vel? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, assumenda. amet consectetur adipisicing elit. Voluptatem, sequi?</p>
+
+     <p class="height">Lorem ipsum dolor sit ametlorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, impedit eligendi, voluptatibus illum, facilis veniam ea deleniti quae ipsum nihil nemo voluptatum neque aliquam id? Vitae dolorum ullam repellendus, dolor quo laboriosam! Explicabo consectetur, natus rem omnis praesentium officiis harum? consectetur adipisicing elit. Excepturi, animi.</p>
+
+     <p class="boxsizing">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, ratione.</p>
+
+</body>
+</html>
