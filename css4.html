@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   
+    <style>
+        body{
+    background-color: palevioletred;
+}
+
+div{
+    font-size: large;
+    text-align: center;
+}
+
+div::after{
+    content: "Welcome to the demo";
+}
+
+@media(max-width : 400px){
+    /*  if veiwport is atleast 900px then this css will apply*/
+    body{
+        background-color: aqua;
+    }
+
+    div::after{
+        content: "Very samll";
+    }
+}
+
+/* (min-width : 400px) and (max-width : 750px) */
+@media( 400px < width < 750px){
+    /*  if veiwport is atleast 900px then this css will apply*/
+    body{
+        background-color: olivedrab;
+    }
+
+    div::after{
+        content: "Mid range";
+    }
+}
+
+
+@media(min-width : 750px){
+    /*  if veiwport is atleast 900px then this css will apply*/
+    body{
+        background-color: yellow;
+    }
+
+    div::after{
+        content: "wow its working";
+    }
+}
+
+@media(min-width : 900px){
+    /*  if veiwport is atleast 900px then this css will apply*/
+    body{
+        background-color: red;
+    }
+
+    div::after{
+        content: "wow its working";
+    }
+}
+
+@media(min-width : 1000px){
+    /*  if veiwport is atleast 900px then this css will apply*/
+    body{
+        background-color: blue;
+    }
+
+    div::after{
+        content: "wow its working";
+    }
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>
