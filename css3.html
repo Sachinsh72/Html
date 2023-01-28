@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* pseudo class  */
+        a:hover{
+            color: red;
+            background-color: yellow;
+        }  /* hover usually work on button or anchor*/
+
+        a:active{
+            color: white;
+        }
+
+        /* a:visited{
+            color: black;
+        } */
+
+        input:focus{
+            background-color: pink;
+        }
+
+        /* a:first-child{
+            color: pink;
+            background-color: yellow;
+        } */
+
+        a:nth-child(even){
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Pseudo element  */
+
+        /* p::first-line{
+            color: violet;
+        } */
+
+        /* p::after{
+            content: "- Sachin sharma";
+            color: red;
+        } */
+
+        p::before{
+            content: "- Sachin sharma";
+            color: red;
+        }
+
+        p::selection{
+            background-color: black;
+            color: yellow;
+        }
+
+        .grad{
+            height: 200px;
+            /* background-image: linear-gradient(red, yellow); */
+            background-image: radial-gradient(circle, red, yellow, blue);
+            /* background-image: repeating-radial-gradient( red, yellow, blue); */
+            /* background-image: conic-gradiant(red, yellow); */
+        }
+
+        .trans{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            transition: width 2s, height 3s, background-color 2s ;
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-delay: 2s;
+        }
+
+        .trans:hover{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            
+        }
+
+         /* Animation */
+
+         .animate{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: colorchange;
+            position: relative;
+            animation-duration: 10s;
+            /* animation-delay: 3s; */
+            animation-iteration-count: 3;
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: reverse; */
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            
+         }
+
+         @keyframes colorchange {
+            /* from {background-color: red;
+                 top: 0px;
+                left: 0px;}
+            to {background-color: yellow;
+                top: 0px;
+                left: 200px;} */
+                
+
+            0% {background-color: red;
+                 top: 0px;
+                left: 0px;}
+
+            25% {background-color: violet;
+                 top: 0px;
+                left: 200px;}
+
+            50% {background-color: green;
+                 top: 200px;
+                left: 200px;}
+
+             75% {background-color: green;
+                 top: 200px;
+                left: 0px;}
+
+            100% {background-color: yellow;
+                top: 0px;
+                left: 0px;}
+         }
+
+         #ease{
+            animation-timing-function: ease;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: colorchange;
+            position: relative;
+            animation-duration: 10s;
+         }
+
+         #easein{
+            animation-timing-function: ease-in;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: colorchange;
+            position: relative;
+            animation-duration: 10s;
+         }
+
+         #easeout{
+            animation-timing-function: ease-out;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: colorchange;
+            position: relative;
+            animation-duration: 10s;
+         }
+
+         #linear{
+            animation-timing-function:linear ;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: colorchange;
+            position: relative;
+            animation-duration: 10s;
+         }
+         
+    
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo class -->
+
+    <nav>
+        <a href="google.com">Google.com</a>
+        <a href="google.com">Google.com</a>
+        <a href="google.com">Google.com</a>
+        <a href="google.com">Google.com</a>
+        <a href="google.com">Google.com</a>
+        <a href="google.com">Google.com</a>
+    </nav>
+
+    <input type="text"> 
+
+    <!-- Pseudo element -->
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consequuntur non reiciendis adipisci tempore sint nesciunt. Beatae cupiditate suscipit consequuntur facilis similique. Consequatur eaque neque consequuntur illo magni commodi accusamus iure accusantium modi assumenda quia maxime eius minus, ab explicabo alias corrupti, voluptatem quo molestias sint a ad, rerum hic!
+    </p>
+    
+    <!-- Gradient  : linear, radial, conic -->
+
+    <div class="grad"> </div>
+
+    <!-- Transition -->
+    <div class="trans"> </div>
+    <br>
+
+    <!-- Animation -->
+     
+    <div class="animate"></div>
+
+    <div id="ease">Div ease</div>
+    <div id="easein">Div ease in</div>
+    <div id="easeout">Div ease out</div>
+    <div id="linear"> Div linear</div>
+
+</body>
+</html>
