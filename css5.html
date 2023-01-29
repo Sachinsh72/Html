@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query for different screens and css layout</title>
+
+    <style>
+        @media (max-width : 600px){
+            /* phone */
+            body{
+                background-color: red;
+            }
+
+            div::after{
+                content: "This is mobile compatible";
+            }
+        }
+
+        @media (min-width : 600px){
+            /* portrait table and big phones */
+            body{
+                background-color: blue;
+            }
+
+            div::after{
+                content: "This is portaits tablet and big mobile compatible";
+            }
+        }
+
+        @media (min-width : 768px){ 
+            /* tablet */
+            body{
+                background-color: yellow;
+            }
+
+            div::after{
+                content: "This is tablet compatible";
+            }
+        }
+
+        @media (min-width : 992px){ 
+            /* Laptop */
+            body{
+                background-color: aquamarine;
+            }
+
+            div::after{
+                content: "This is laptop compatible";
+            }
+        }
+
+        @media (min-width : 1200px){ 
+            /* Larger Screen */
+            body{
+                background-color: green;
+            }
+
+            div::after{
+                content: "This is larger screen compatible";
+            }
+        }
+
+        div{
+            /* text-align: center; */
+            color: white;
+            font-size: large;
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            float: none;
+        }
+    </style>
+</head>
+<body>
+    <div> </div>
+</body>
+</html>
