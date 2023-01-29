@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Positions</title>
+    <style>
+        .main{
+             height: 300px;
+            width: 1000px;
+            border: 2px solid black;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        .box1{
+            background-color: red;
+            border: 2px solid black;
+            /* relative works w.r.t to original position.  */
+            /* position: relative; */
+            /* absolute works w.r.t to parent position. */
+            position: absolute;
+            top: 12px;
+            left: 100px;
+        }
+
+        .box2{
+            background-color: blue;
+            position: fixed;
+            
+            bottom: 0; 
+            right: 10px;
+            /* border-radius: 50px; */
+
+        }
+
+        .box3{
+            background-color: black;
+            position: sticky;
+            /* sticky work only with parents */
+            top: 0;
+        }
+
+        .lorem{
+            height: 200px;
+            width: 200px;
+            border: 5px solid red;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+        }
+
+        .one{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            /* by z-index : It will go backwards , works like stack*/
+            z-index: -1;
+        }
+
+        .two{
+            height: 50px;
+            width: 50px;
+            background-color: pink;
+            position: absolute;
+            top: 0;
+            z-index: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Positions  -->
+      <!-- with position bottom , right, left, top is must to give a fixed place -->
+
+    <div class="main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt esse ea quod voluptatum ad eos, </p>
+    </div>
+
+    <p> maxime dicta sint et illo deserunt numquam architecto inventore recusandae explicabo! Voluptas repellat corporis ducimus eveniet quos quas debitis incidunt, sunt quis laudantium fugit iure, id, itaque sequi facere animi sapiente voluptatem aut doloribus eius esse maiores? Inventore dolor eligendi consequuntur voluptate enim dolores saepe dicta. Autem recusandae ducimus earum deserunt quas. Optio quos numquam nesciunt distinctio. nobis possimus saepe soluta! Dolorum suscipit voluptate quidem temporibus animi, a id minus dolor eum reprehenderit?</p>
+
+    <!-- Overflow  -->
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, debitis nesciunt! Facere consequatur architecto voluptatum tempora assumenda culpa animi distinctio, dignissimos non natus aliquid, perferendis vitae nobis quibusdam ullam odit ducimus ratione doloremque quo, optio libero sit ad facilis! Voluptates porro velit, fugiat et quo consectetur dolorum omnis iusto dicta. Odio ea reprehenderit incidunt repellendus, ab placeat. Explicabo sit laborum amet est porro doloribus tempora placeat eos, aperiam, exercitationem, quo rerum officiis? Perspiciatis sed deserunt quo quaerat unde, veritatis accusantium eos, dolore quasi, optio recusandae commodi est. Libero ipsa accusantium illo pariatur, voluptates eius eveniet temporibus atque veritatis corporis beatae.</p>
+
+    <!-- Z-index  -->
+
+    <div class="one"></div>
+
+    <div class="two"></div>
+
+</body>
+</html>
