@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            display: flex;
+            /* display: inline-flex; */
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; (given height, width will not change) */
+            /* justify-content: center; */
+
+            /* align-items: center;  */
+            /* gap: 3px; */
+            /* row-gap: 3px; */
+            /* column-gap: 10px; */
+            /* flex-flow: start nowrap; */
+
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+
+        .box1{
+            background-color: red;
+            /* order: 3; */
+            /* flex-basis: 20px; */
+            /* flex: 2 0 100px; */
+        }
+
+        .box2{
+            background-color: blue;
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            align-self: flex-end;
+            /* order: 1; */
+        }
+
+        .box3{
+            background-color: green;
+            /* order: 2; */
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Flexbox layout module : work in 1 dimentional. majorly used property is display flex, justify content center, align item center  
+        Fundamental terminologies  : flex container, flex items, main axis (x), cross axis (y) 
+
+        Different flex property : container & item property
+
+        Container flex - display, flex direction, flex wrap, flex flow, justify-content, align-items, align-content, gap : row & column
+        item flex - order, flex-grow, flex-shrink, basis, flex, align-self
+
+        Parent is must for it.
+    -->
+
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2"> Box 2</div>
+        <div class="box box3"> Box 3</div>
+    </div>
+
+
+
 </body>
 </html>
