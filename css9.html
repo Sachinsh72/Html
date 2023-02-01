@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid album</title>
+    <style>
+
+        .container{
+            display: grid;
+            /* height: 700px; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 200px);
+        }
+
+
+        .box{
+            /* height: 100px;
+            width: 100px; */
+            margin: 3px;
+        }
+
+        .bo1{
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .bo2{
+            background-color: blue;
+        }
+
+        .bo3{
+            background-color: yellow;
+        }
+
+        .bo4{
+            background-color: orange;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .bo5{
+            background-color: palevioletred;
+        }
+        .bo6{
+            background-color: brown;
+        }
+        .bo7{
+            background-color: aqua;
+        }
+        .bo8{
+            background-color: purple;
+        }
+        .bo9{
+            background-color: rgb(49, 48, 44);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box bo1"></div>
+        <div class="box bo2"></div>
+        <div class="box bo3"></div>
+        <div class="box bo4"></div>
+        <div class="box bo5"></div>
+        <div class="box bo6"></div>
+        <div class="box bo7"></div>
+        <div class="box bo8"></div>
+        <div class="box bo9"></div>
+    </div>
+</body>
+</html>
