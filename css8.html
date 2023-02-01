@@ -9,18 +9,27 @@
 
         .container{
             display: grid;
-            grid-template-columns: auto auto auto;
-            
+            grid-template-columns: 1fr 1fr 1fr; /* how many columns just display according to the width */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-rows: 600px 100px 100px ;  /* height of the box  */
+            /* align-items: center; */
+            /* justify-items: center; */
         }
 
+        /* parent overright by the child */
+
         .box{
-            height: 200px;
-            width: 200px;
+            height: 20px;
+            width: 20px;
             margin: 2px;
         }
 
         .box1{
             background-color: red;
+            /* align-self: center;  /* (work on y axis) */ 
+            justify-self: end;  /* (work on x axis) */
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
         }
 
         .box2{
