@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*  larger screen size -1440px 
+        Normal screen size - 1024px
+        tablet screen size - 768px
+        mobile screen size - 425px */
+
+        .cont{
+            display: flex;
+        }
+
+        /* max-width : km se km
+        min-width : jyada se jyada */
+        .box{
+            border: 2px solid black;
+            height: 250px;
+            width: 300px;
+            margin: 2px;
+        }
+
+        .box1{
+            background-color: red;
+        }
+
+        .box3{
+            background-color: yellow;
+        }
+
+        @media screen and (min-width: 768px) and (max-width : 1024px){
+            body{
+                /* display: none; */
+                background-color: #808088;
+            }
+            
+            .cont{
+            display: flex;
+            flex-direction: column;
+        }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
+    <a href="./css9.html">CSS9 multiple page linking</a>
+</body>
+</html>
