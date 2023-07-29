@@ -18,7 +18,7 @@ The whole repo is divided into two folders and multiple single file with respect
 - TailwindCSS
 
 ## Installation
-. HTML-CSS-Projects
+HTML-CSS-Projects
 For the html/css
 requires only VScode to run.
 
